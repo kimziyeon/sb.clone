@@ -581,7 +581,7 @@ header .badges {
 .rewards .inner {
     height: 241px;
     display: flex;
-    width: 70%;
+    max-width: 1080px;
 }
 
 .rewards .rewards-left {
@@ -590,7 +590,7 @@ header .badges {
 }
 
 .rewards .rewards-left .rewards-logo {
-    width: 170px;
+    width: 80%;
 }
 
 .rewards .rewards-right {
@@ -606,16 +606,17 @@ header .badges {
 
 .rewards .rewards-right .join-conts h4 {
     color: #fff;
-    font-size: 29px;
+    font-size: 26px;
     margin-bottom: 12px;
 }
 
 .rewards .rewards-right .join-conts .conts_info {
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     margin-bottom: 20px;
 }
+
 
 .rewards .rewards-right .join-conts .btn-group {
     position: absolute;
@@ -638,15 +639,13 @@ header .badges {
 }
 
 
-
-
-
 .rewards .rewards-right .gift-conts {
     position: relative;
 }
 
 .rewards .rewards-right .gift-conts h4 {
     color: #fff;
+    font-size: 15px;
     line-height: 22px;
 }
 
