@@ -74,6 +74,12 @@ a {
     color: #fff;
 }
 
+.btn.btn--whiteline {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
 
 
 /* 섹션 - show 스크롤효과 */
@@ -582,6 +588,7 @@ header .badges {
     height: 241px;
     display: flex;
     max-width: 1080px;
+    width: 100%;
 }
 
 .rewards .rewards-left {
@@ -590,7 +597,7 @@ header .badges {
 }
 
 .rewards .rewards-left .rewards-logo {
-    width: 80%;
+    width: 180px;
 }
 
 .rewards .rewards-right {
@@ -612,35 +619,33 @@ header .badges {
 
 .rewards .rewards-right .join-conts .conts_info {
     color: #fff;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.rewards .rewards-right .join-conts .btn-group {
-    position: absolute;
-    bottom: 20%;
-    right: 0;
+.rewards .rewards-right .join-conts .conts_info .btn-group {
     width: 220px;
     display: flex;
-    flex-wrap: wrap;
 }
 
-.rewards .rewards-right .join-conts .btn-group .btn.join {
+.rewards .rewards-right .join-conts .conts_info .btn-group .btn.join {
     width: 110px;
     margin-right: 10px;
-    line-height: 20px;
 }
 
-.rewards .rewards-right .join-conts .btn-group .btn.login {
+.rewards .rewards-right .join-conts .conts_info .btn-group .btn.login {
     width: 100px;
-
 }
 
 
 .rewards .rewards-right .gift-conts {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .rewards .rewards-right .gift-conts h4 {
@@ -650,13 +655,8 @@ header .badges {
 }
 
 .rewards .rewards-right .gift-conts .btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     width: 220px;
 }
-
-
 
 
 
@@ -703,13 +703,15 @@ header .badges {
 
 .reserve .inner {
     height: 400px;
+    display: flex;
 }
 
 .reserve .coffee {
     max-width: none;
     position: absolute;
     top: 0;
-    left: -40%;
+    right: 50%;
+    transform: translateX(50%);
 }
 
 .reserve .txt_group {
@@ -970,10 +972,7 @@ footer .btn_group a {
     margin-right: 10px;
 }
 
-footer .btn_group .btn--reverse:hover {
-    color: #fff;
-    background-color: transparent;
-}
+
 
 footer .btn_group a:last-child {
     margin-right: 0;
