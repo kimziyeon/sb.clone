@@ -383,7 +383,6 @@ header .badges {
 
 .notice .notice-line {
     position: relative;
-
 }
 
 .notice .notice-line .bg-left {
@@ -406,6 +405,7 @@ header .badges {
 }
 
 .notice .notice-line .inner {
+    max-width: 1080px;
     height: 62px;
     display: flex;
 }
