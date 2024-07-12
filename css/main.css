@@ -422,6 +422,7 @@ header .badges {
     font-size: 17px;
     font-weight: 600;
     margin-right: 20px;
+    white-space: nowrap;
 }
 
 .notice .notice-line .inner .inner__left .swiper-container {
