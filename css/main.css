@@ -243,11 +243,16 @@ header .main_menu .item .item__contants {
     width: 100%;
     position: fixed;
     left: 0;
-    display: none;
+    display: block;
+    transform: scaleY(0);
+    transition: transform 0.3s;
+    transform-origin: top;
+    opacity: 0;
 }
 
 header .main_menu .item:hover .item__contants {
-    display: block;
+    transform: scaleY(1);
+    opacity: 1;
 }
 
 header .main_menu .item .item__contants .contants__menu {
