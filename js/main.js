@@ -61,13 +61,16 @@ new Swiper('.notice-line .swiper-container', {
 });
 
 new Swiper('.promotion .swiper-container', {
+
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 0,
     centeredSlides: true,
     loop: true,
-    autoplay: {
-        delay: 3000
-    },
+    // autoplay: {
+    //     delay: 3000
+    // },
+
+
     pagination: {
         el: '.promotion .swiper-pagination',
         clickable: true
@@ -75,8 +78,11 @@ new Swiper('.promotion .swiper-container', {
     navigation: {
         prevEl: '.promotion .swiper-prev',
         nextEl: '.promotion .swiper-next'
-    }
+    },
+
+
 })
+
 
 
 
@@ -111,6 +117,7 @@ spyEls.forEach((spyEl) => {
         .setClassToggle(spyEl, 'show')
         .addTo(new ScrollMagic.Controller()) //장면 할당
 });
+
 
 
 

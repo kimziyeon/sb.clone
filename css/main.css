@@ -141,6 +141,10 @@ header .logo {
     margin: auto;
 }
 
+header .mob_menu {
+    display: none;
+}
+
 header .sub_menu {
     display: flex;
     position: absolute;
@@ -309,7 +313,10 @@ header .badges {
 
 .visual .visual-bg {
     width: 100%;
+}
 
+.visual .visual-bg_m {
+    display: none;
 }
 
 .visual .inner {
@@ -327,6 +334,14 @@ header .badges {
 
 .visual .title .visual-title {
     width: 100%;
+}
+
+.visual .title .visual-title_m {
+    display: none;
+}
+
+.cup_group_m {
+    display: none;
 }
 
 .visual .title .btn {
@@ -515,6 +530,8 @@ header .badges {
     opacity: 1;
 }
 
+.notice .promotion .swiper-container .swiper-slide img {}
+
 .notice .promotion .swiper-container .swiper-slide .btn {
     position: absolute;
     left: 0;
@@ -592,7 +609,7 @@ header .badges {
 .rewards .inner {
     height: 241px;
     display: flex;
-    max-width: 1080px;
+    max-width: 1024px;
     width: 100%;
 }
 
@@ -622,6 +639,10 @@ header .badges {
     margin-bottom: 12px;
 }
 
+.rewards .rewards-right .join-conts h4 br {
+    display: none;
+}
+
 .rewards .rewards-right .join-conts .conts_info {
     color: #fff;
     font-size: 18px;
@@ -632,10 +653,20 @@ header .badges {
 }
 
 
+.rewards .rewards-right .join-conts .conts_info br {
+    display: none;
+}
+
+.rewards .rewards-right .join-conts .conts_info .br_pc {
+    display: block;
+}
+
+
 .rewards .rewards-right .join-conts .conts_info .btn-group {
     width: 220px;
     display: flex;
 }
+
 
 .rewards .rewards-right .join-conts .conts_info .btn-group .btn.join {
     width: 110px;
@@ -650,6 +681,7 @@ header .badges {
 .rewards .rewards-right .gift-conts {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 
 }
 
@@ -657,6 +689,14 @@ header .badges {
     color: #fff;
     font-size: 15px;
     line-height: 22px;
+}
+
+.rewards .rewards-right .gift-conts h4 br {
+    display: none;
+}
+
+.rewards .rewards-right .gift-conts h4 .br_pc {
+    display: block;
 }
 
 .rewards .rewards-right .gift-conts .btn {
@@ -689,7 +729,13 @@ header .badges {
     left: 50%;
 }
 
+
 .main-bean .txt_group .bean_txt {}
+
+.main-bean .txt_group .bean_txt_m {
+    display: none;
+}
+
 
 .main-bean .txt_group .more {
     margin-top: 30px;
@@ -1039,4 +1085,237 @@ footer .corp {
 #to-top.active {
     opacity: 1;
     visibility: visible;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+
+    .inner {
+        width: 95%;
+        position: relative;
+    }
+
+
+    header>.inner {
+        height: 69px;
+    }
+
+    header .logo {
+        top: 50%;
+        left: 0;
+    }
+
+    header .logo img {
+        width: 60%;
+    }
+
+    header .mob_menu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header .mob_menu a img {
+        height: 30px;
+    }
+
+    header .sub_menu,
+    header .main_menu {
+        display: none;
+    }
+
+
+
+
+
+    .visual {
+        margin-top: 69px;
+    }
+
+    .visual .visual-bg {
+        display: none;
+    }
+
+    .visual .visual-bg_m {
+        display: block;
+        width: 100%;
+    }
+
+    .visual .inner {
+        width: 90%;
+        top: 4%;
+        left: 5%;
+    }
+
+    .visual .title {
+        width: 100%;
+        position: relative;
+    }
+
+    .visual .title .visual-title {
+        display: none;
+    }
+
+    .visual .title .visual-title_m {
+        display: block;
+        width: 35%;
+        margin-left: 10%;
+    }
+
+    .visual .title .btn {
+        width: 30%;
+        padding: 5% 0;
+        position: absolute;
+        top: 305vw;
+        line-height: 0;
+
+    }
+
+
+
+    .visual .cup01,
+    .visual .cup02,
+    .visual .cup03,
+    .visual .cup04 {
+        display: none;
+    }
+
+    .cup_group_m {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cup_group_m .cup01_m {
+        width: 100%;
+        margin-left: 15%;
+    }
+
+    .cup_group_m .cup02_m {
+        width: 90%;
+    }
+
+    .cup_group_m .cup03_m {
+        width: 105%;
+        margin-left: 15%;
+    }
+
+    .cup_group_m .cup04_m {
+        width: 90%;
+    }
+
+
+
+
+
+
+
+    .rewards .inner {
+        width: 90%;
+        height: 100%;
+        padding: 5% 0;
+    }
+
+    .rewards .rewards-left {
+        width: 30%;
+    }
+
+    .rewards .rewards-left .rewards-logo {
+        width: 80%;
+    }
+
+    .rewards .rewards-right {
+        width: 70%;
+
+    }
+
+    .rewards .rewards-right .join-conts .conts_info {
+        display: block;
+    }
+
+    .rewards .rewards-right .join-conts .conts_info .btn-group {
+        margin-top: 15px;
+    }
+
+    .rewards .rewards-right .gift-conts {
+        display: block;
+    }
+
+    .rewards .rewards-right .gift-conts .btn {
+        margin-top: 15px;
+    }
+
+    .rewards .rewards-right .join-conts h4 {
+        line-height: 33px;
+    }
+
+    .rewards .rewards-right .join-conts h4 br {
+        display: block;
+    }
+
+    .rewards .rewards-right .join-conts .conts_info br {
+        display: block;
+    }
+
+    .rewards .rewards-right .gift-conts h4 br {
+        display: block;
+    }
+
+    .main-bean {
+        padding: 100px 0;
+        background: url(../images/25th_summer_bean_bg_m.jpg) no-repeat center / cover;
+
+    }
+
+
+    .main-bean .inner {
+        height: auto;
+    }
+
+    .main-bean .bean {
+        position: static;
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+
+
+    .main-bean .txt_group {
+        position: static;
+        width: 100%;
+    }
+
+    .main-bean .txt_group .bean_txt {
+        display: none;
+    }
+
+    .main-bean .txt_group .bean_txt_m {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-bean .txt_group .more .btn {
+        width: 30%;
+        margin: 0 auto;
+        padding: 5% 0;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    .main-bean .txt_group .more .btn:hover {
+        color: #13362d;
+        background-color: #fff;
+    }
+
 }
