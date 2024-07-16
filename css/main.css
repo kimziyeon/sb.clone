@@ -713,21 +713,14 @@ header .badges {
 
 .main-bean .inner {
     height: 520px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-bean .bean {
-    width: 30%;
-    position: absolute;
-    top: 15%;
-    left: 20%;
-}
+.main-bean .bean {}
 
-.main-bean .txt_group {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-}
+.main-bean .txt_group {}
 
 
 .main-bean .txt_group .bean_txt {}
@@ -1294,20 +1287,17 @@ footer .corp {
 
     .main-bean .inner {
         height: auto;
+        flex-direction: column;
     }
 
     .main-bean .bean {
-        position: static;
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         padding-left: 100px;
     }
 
 
-    .main-bean .txt_group {
-        position: static;
-        width: 100%;
-    }
+    .main-bean .txt_group {}
 
     .main-bean .txt_group .bean_txt {
         display: none;
@@ -1315,7 +1305,7 @@ footer .corp {
 
     .main-bean .txt_group .bean_txt_m {
         display: block;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -1520,3 +1510,6 @@ footer .corp {
     }
 
 }
+
+
+@media (max-width: 600px) {}
