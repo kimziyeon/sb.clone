@@ -994,7 +994,9 @@ footer .copyright .inner {}
 
 footer .copyright .list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     padding-top: 20px;
 }
 
@@ -1383,6 +1385,7 @@ footer .corp {
         left: 0;
         align-items: center;
         gap: 40px;
+        margin: 0;
     }
 
     .favorite .txt_group .pick,
