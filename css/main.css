@@ -784,7 +784,7 @@ header .badges {
 
 /* favorite */
 .favorite {
-    background: url(../images/favorite_bg.jpg) no-repeat center;
+    background: url(../images/favorite_bg.jpg) no-repeat center / cover;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
