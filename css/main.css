@@ -807,7 +807,10 @@ header .badges {
 
 .favorite .txt_group .pick_txt {
     margin-bottom: 30px;
+}
 
+.favorite .txt_group .pick_txt_m {
+    display: none;
 }
 
 .favorite .txt_group .more {}
@@ -835,6 +838,10 @@ header .badges {
     margin-top: 40px;
 }
 
+.magazine .magazine_visual_m {
+    display: none;
+}
+
 .magazine .txt_group {
     position: absolute;
     top: 50%;
@@ -855,6 +862,7 @@ header .badges {
     right: 10%;
     z-index: 5;
 }
+
 
 
 
@@ -905,12 +913,14 @@ header .badges {
     margin-bottom: 15px;
 }
 
-.find .txt_group .find_text2 {}
 
 .find .txt_group .more {
     margin-top: 30px;
 }
 
+.find .txt_group .find_text2_m {
+    display: none;
+}
 
 
 
@@ -1353,4 +1363,158 @@ footer .corp {
         color: #13362d;
         background-color: #fff;
     }
+
+    .favorite {
+        background: url(../images/favorite_bg_m.jpg) no-repeat center / cover;
+
+    }
+
+    .favorite .inner {
+        height: auto;
+        padding: 100% 0;
+    }
+
+    .favorite .txt_group {
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .favorite .txt_group .pick,
+    .favorite .txt_group .pick_txt {
+        display: none;
+    }
+
+    .favorite .txt_group .pick_txt_m1 {
+        width: 45%;
+    }
+
+    .favorite .txt_group .pick_txt_m2 {
+        width: 60%;
+
+    }
+
+    .favorite .pick_img {
+        width: 100%;
+        top: 5%;
+        left: 0;
+        transform: translateY(0);
+    }
+
+    .favorite .txt_group .more {
+        width: 100%;
+    }
+
+    .favorite .txt_group .more .btn {
+        width: 30%;
+        margin: 0 auto;
+        padding: 5% 0;
+    }
+
+
+    .magazine {
+        background: none;
+    }
+
+    .magazine .inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .magazine .magazine_visual_m {
+        display: block;
+        width: 100%;
+    }
+
+    .magazine .txt_group .magazine_txt,
+    .magazine .magazine_visual {
+        display: none;
+    }
+
+    .magazine .txt_group {
+        position: static;
+        left: 0;
+        transform: translate(0);
+    }
+
+    .magazine .txt_group .more {
+        width: 100%;
+        margin: 0;
+    }
+
+    .magazine .txt_group .more .btn {
+        width: 20%;
+        border: none;
+        border-radius: 0;
+        border-top: 3px solid #000;
+        position: absolute;
+        bottom: 50px;
+        right: 20%;
+    }
+
+    .magazine .txt_group .more .btn:hover {
+        background: transparent;
+        color: #13362d;
+    }
+
+
+    .find .inner {
+        width: 100%;
+        height: auto;
+        padding: 25% 0;
+    }
+
+    .find .find_texture1 {
+        width: 50%;
+        transform: translateX(-50%);
+        top: 31%;
+        left: 42%;
+    }
+
+    .find .find_picture1 {
+        width: 60%;
+        transform: translateX(-50%);
+        left: 45%;
+    }
+
+    .find .find_picture2 {
+        width: 40%;
+        transform: translateX(-50%);
+        top: 15%;
+        bottom: 0;
+        left: 65%;
+    }
+
+    .find .txt_group {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50%;
+    }
+
+    .find .txt_group .find_text2 {
+        display: none;
+    }
+
+
+    .find .txt_group .find_text1 {
+        width: 60%;
+    }
+
+    .find .txt_group .find_text2_m {
+        width: 75%;
+        display: block;
+    }
+
+    .find .txt_group .more {
+        margin-top: 20px;
+        z-index: 1;
+    }
+
 }
