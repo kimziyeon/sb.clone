@@ -747,7 +747,7 @@ header .badges {
 /* reserve */
 
 .reserve {
-    background: url(../images/240521_pc_reserve_bg_1.jpg) no-repeat center / cover;
+    background: url(../images/reserve_bg_pc.jpg) no-repeat center / cover;
     position: relative;
     overflow: hidden;
 }
@@ -784,7 +784,7 @@ header .badges {
 
 /* favorite */
 .favorite {
-    background: url(../images/favorite_bg.jpg) no-repeat center / cover;
+    background: url(../images/favorite_bg.jpg) no-repeat center;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
@@ -1318,4 +1318,39 @@ footer .corp {
         background-color: #fff;
     }
 
+    .reserve {
+        background: url(../images/reserve_bg_m.jpg) no-repeat center / cover;
+    }
+
+    .reserve .inner {
+        height: auto;
+        padding: 100% 0;
+    }
+
+    .reserve .coffee,
+    .reserve .txt_group .coffee_txt {
+        display: none;
+    }
+
+    .reserve .txt_group {
+        position: static;
+    }
+
+    .reserve .txt_group .more {
+        width: 100%;
+        bottom: 10%;
+    }
+
+    .reserve .txt_group .more .btn {
+        width: 30%;
+        margin: 0 auto;
+        padding: 5% 0;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    .reserve .txt_group .more .btn:hover {
+        color: #13362d;
+        background-color: #fff;
+    }
 }
