@@ -1,8 +1,8 @@
-# 스타벅스
+# 스타벅스 웹페이지
 <p> 👤 Personal Project ㅣ clone</p>
-<!-- <p>
-  🔗 <a href="https://kimziyeon.github.io/nike_women/" target="_blank"> 배포 링크 바로가기</a>
-</p> -->
+<p>
+  🔗 <a href="https://kimziyeon.github.io/starbucks/" target="_blank"> 배포 링크 바로가기</a>
+</p>
 
 
 <h4> 🛠️ Technology Stack<h4>
