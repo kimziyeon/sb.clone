@@ -20,4 +20,4 @@
 <p>스크롤매직 - https://cdnjs.com/libraries/ScrollMagic</p>
 <p>스와이퍼 - https://swiperjs.com</p>
 
-<h4>☕️ <a href="https://www.starbucks.co.kr/index.do">스타벅스 코리아 공식 웹페이지</a> ☕️<h4>
+<h4>☕️ <a href="https://www.starbucks.co.kr/">스타벅스 코리아 공식 웹페이지</a> ☕️<h4>
