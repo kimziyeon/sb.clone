@@ -902,6 +902,7 @@ header .badges {
     position: absolute;
     top: 30%;
     left: 55%;
+    margin-left: 30px;
 }
 
 .find .txt_group .find_text1 {
