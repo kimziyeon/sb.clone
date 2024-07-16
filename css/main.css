@@ -1489,6 +1489,7 @@ footer .corp {
         align-items: center;
         gap: 10px;
         margin-top: 50%;
+        margin-left: 0;
     }
 
     .find .txt_group .find_text2 {
