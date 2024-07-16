@@ -14,7 +14,10 @@
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"/>
 
+
 <h4>라이브러리 참고페이지<h4>
 <p>아이콘 - https://fonts.google.com/icons</p>
 <p>스크롤매직 - https://cdnjs.com/libraries/ScrollMagic</p>
-<p>스와이퍼 - https://swiperjs.com/</p>
+<p>스와이퍼 - https://swiperjs.com</p>
+
+<h4>☕️ <a href="https://www.starbucks.co.kr/index.do">스타벅스 코리아 공식 웹페이지</a> ☕️<h4>
