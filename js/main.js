@@ -1,4 +1,6 @@
-//search input
+
+
+//검색창 input
 const search = document.querySelector('.search');
 const searchInput = search.querySelector('input');
 
@@ -19,8 +21,7 @@ searchInput.addEventListener('blur', () => {
 
 
 
-//main visual음료 나타나기
-
+//main 음료 시간순 나타나기
 const fadeInEls = document.querySelectorAll('.visual .fade-in');
 
 fadeInEls.forEach((fadeInEl, idx) => {
@@ -53,35 +54,48 @@ window.addEventListener('scroll', () => {
 
 
 
-//notice swiper
+//notice
 new Swiper('.notice-line .swiper-container', {
     direction: "vertical",
     autoplay: true,
     loop: true
 });
 
-new Swiper('.promotion .swiper-container', {
 
-    slidesPerView: 3,
-    spaceBetween: 0,
-    centeredSlides: true,
-    loop: true,
-    // autoplay: {
-    //     delay: 3000
-    // },
-
-
-    pagination: {
-        el: '.promotion .swiper-pagination',
-        clickable: true
-    },
-    navigation: {
-        prevEl: '.promotion .swiper-prev',
-        nextEl: '.promotion .swiper-next'
-    },
-
-
-})
+//notice promotion
+if(innerWidth >= 640){
+    new Swiper('.promotion .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 3000
+        },
+    
+        pagination: {
+            el: '.promotion .swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            prevEl: '.promotion .swiper-prev',
+            nextEl: '.promotion .swiper-next'
+        },
+    })
+}else if(innerWidth < 640){
+    new Swiper('.promotion .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: '.promotion .swiper-pagination',
+            clickable: true
+        }
+    })
+}
 
 
 
@@ -104,8 +118,8 @@ promotionToggle.addEventListener('click', () => {
     }
 });
 
-//footer 모바일 메뉴 닫고열기
 
+//footer 모바일 메뉴 닫고열기
 const footerMenuTitle = document.querySelectorAll('.footer_menu .menu_title');
 
 footerMenuTitle.forEach((title,idx)=>{
@@ -120,7 +134,6 @@ footerMenuTitle.forEach((title,idx)=>{
 
 
 // section scroll시 순서대로 나타나기 (pc)
-
 const spyEls = document.querySelectorAll('section.scroll-spy');
 const backPoisEls = document.querySelectorAll('section .back-position');
 
