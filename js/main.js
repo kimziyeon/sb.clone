@@ -104,8 +104,18 @@ promotionToggle.addEventListener('click', () => {
     }
 });
 
+//footer 모바일 메뉴 닫고열기
 
+const footerMenuTitle = document.querySelectorAll('.footer_menu .menu_title');
 
+footerMenuTitle.forEach((title,idx)=>{
+    title.addEventListener('click',()=>{
+        let menuList = title.nextElementSibling;    //title의 다음형제요소
+        if(menuList){
+            menuList.style.display=(menuList.style.display ==='block') ?'none':'block';
+        }
+    })
+})
 
 
 
