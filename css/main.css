@@ -1207,20 +1207,20 @@ footer .corp {
         height: 100vh;
         width: 75%;
         top: 0;
-        z-index: 99;
+        z-index: 999;
         flex-direction: column;
         overflow: scroll;
     }
 
     header .main_menu .menu_inner .search_m {
         width: 75%;
-        background-color: #2c2926;
+        background-color: #13362d;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 21px 0;
+        padding: 20px 0;
         position: fixed;
-        z-index: 99;
+        z-index: 999;
     }
 
     header .main_menu .menu_inner .search_m input {
@@ -1236,7 +1236,7 @@ footer .corp {
         display: block;
         position: fixed;
         top: 15px;
-        right: 77%;
+        left: 10%;
         color: #fff;
         font-size: 40px;
         cursor: pointer;
