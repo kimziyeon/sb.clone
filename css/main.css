@@ -1137,17 +1137,19 @@ footer .corp {
 
     .inner {
         width: 100%;
-        position: relative;
     }
 
 
     header>.inner {
+        width: 100%;
         height: 69px;
+        position: relative;
     }
+
 
     header .logo {
         top: 50%;
-        left: 0;
+        left: 5%;
     }
 
     header .logo img {
@@ -1163,6 +1165,8 @@ footer .corp {
         align-items: center;
         justify-content: center;
         gap: 20px;
+        margin-right: 5%;
+
     }
 
     header .mob_menu a img {
@@ -1174,113 +1178,10 @@ footer .corp {
         display: none;
     }
 
-    header .main_menu .search_m {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0 10px;
-        background-color: #2d2926;
-        padding: 20px 0;
-    }
-
-    header .main_menu .search_m input {
-        width: 50%;
-    }
-
-    header .main_menu .search_m .material-icons {
-        color: #fff;
-    }
-
 
     header .main_menu {
-        width: 90%;
-        height: 100vh;
-        background-color: #111;
-        top: 0;
-        right: -10%;
-        z-index: 99;
-        flex-direction: column;
-        align-items: flex-start;
-        overflow: scroll;
-
-    }
-
-
-
-
-    /* header .main_menu::after {
-        content: '';
-        width: 100%;
-        height: 100vh;
-        background-color: #000;
-        opacity: 0.5;
-    } */
-
-    header .main_menu .item {
-        width: 100%;
-    }
-
-    header .main_menu .item .item__name {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        color: #fff;
-        font-size: 20px;
-        text-align: left;
-        padding: 20px 0;
-    }
-
-    header .main_menu .item:hover .item__name {
-        background: none;
-        color: #fff;
-
-    }
-
-
-    header .main_menu .item .item__contants {
-        transform: scaleY(1);
-        opacity: 1;
-        position: static;
         display: none;
     }
-
-    header .main_menu .item .item__contants .contants__menu>ul {
-        background-color: #181818;
-        display: block;
-        padding: 0;
-    }
-
-    header .main_menu .item .item__contants .contants__menu>ul>li {
-        width: 75%;
-        margin: 0 auto;
-    }
-
-    header .main_menu .item .item__contants .contants__menu>ul>li h4 {
-        padding: 20px 0;
-        font-size: 18px;
-        display: inline-block;
-    }
-
-    header .main_menu .item .item__contants .contants__menu>ul>li .material-icons {
-        display: inline-block;
-        color: #fff;
-        padding-left: 10px;
-        vertical-align: middle;
-    }
-
-
-    header .main_menu .item .item__contants .contants__menu>ul>li ul {
-        display: none;
-    }
-
-
-    header .main_menu .item .item__contants .contants__menu>ul>li ul li {
-        font-size: 18px;
-        padding: 10px 0;
-    }
-
-
 
 
 
@@ -1324,7 +1225,6 @@ footer .corp {
         position: absolute;
         top: 305vw;
         line-height: 0;
-
     }
 
 

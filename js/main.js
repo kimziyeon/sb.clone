@@ -30,6 +30,22 @@ badgeX.addEventListener('click',()=>{
 
 
 
+// //버거메뉴 모바일 열고닫기
+// const berger = document.querySelector('header .mob_menu .bergerIcon');
+// const bergerX = document.querySelector('header .main_menu .material-icons');
+// const bergerMenu = document.querySelector('header .main_menu');
+
+// berger.addEventListener('click',()=>{
+//     bergerMenu.style.display = 'block';
+// })
+
+
+// bergerX.addEventListener('click',()=>{
+//     bergerMenu.style.display = 'none';
+// })
+
+
+
 
 //main 음료 시간순 나타나기
 const fadeInEls = document.querySelectorAll('.visual .fade-in');
