@@ -1190,7 +1190,8 @@ footer .corp {
         position: relative;
     }
 
-    header .main_menu::after {
+
+    header .main_menu::before {
         content: '';
         width: 100%;
         height: 100vh;
@@ -1235,17 +1236,14 @@ footer .corp {
     header .main_menu .menu_inner>.material-icons {
         display: block;
         position: fixed;
-        top: 15px;
-        left: 10%;
+        top: 4%;
+        right: 80%;
         color: #fff;
         font-size: 40px;
         cursor: pointer;
-        transition: 1s;
+        z-index: 999;
     }
 
-    header .main_menu .menu_inner>.material-icons:hover {
-        transform: rotate(180deg);
-    }
 
     header .main_menu .menu_inner .item .item__name {
         background-color: #111;
@@ -1257,7 +1255,7 @@ footer .corp {
     }
 
     header .main_menu .menu_inner .item:first-of-type .item__name {
-        margin-top: 9cap;
+        margin-top: 90px;
     }
 
     header .main_menu .menu_inner .item:hover .item__name {

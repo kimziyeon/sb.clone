@@ -176,6 +176,7 @@ const berger = document.querySelector('header .mob_menu .bergerIcon');
 const bergerX = document.querySelector('header .main_menu .menu_inner .material-icons');
 const bergerMenu = document.querySelector('header .main_menu');
 
+
 berger.addEventListener('click',()=>{
     bergerMenu.style.display = 'block';
 })
