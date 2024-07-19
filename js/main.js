@@ -20,6 +20,16 @@ searchInput.addEventListener('blur', () => {
 
 
 
+//header 벳지 모바일 닫기
+const badge = document.querySelector('header .badges');
+const badgeX = document.querySelector('header .badges .material-icons');
+
+badgeX.addEventListener('click',()=>{
+    badge.style.display = 'none';
+})
+
+
+
 
 //main 음료 시간순 나타나기
 const fadeInEls = document.querySelectorAll('.visual .fade-in');
@@ -125,8 +135,12 @@ const footerMenuTitle = document.querySelectorAll('.footer_menu .menu_title');
 footerMenuTitle.forEach((title,idx)=>{
     title.addEventListener('click',()=>{
         let menuList = title.nextElementSibling;    //title의 다음형제요소
+        let menuIcon = title.querySelector('.material-icons');
+
         if(menuList){
-            menuList.style.display=(menuList.style.display ==='block') ?'none':'block';
+            const isOpen = menuList.style.display ==='block';
+            menuList.style.display = isOpen ? 'none':'block';
+            menuIcon.classList.toggle('active');
         }
     })
 })
