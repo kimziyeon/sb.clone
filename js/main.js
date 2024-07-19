@@ -30,21 +30,6 @@ badgeX.addEventListener('click',()=>{
 
 
 
-// //버거메뉴 모바일 열고닫기
-// const berger = document.querySelector('header .mob_menu .bergerIcon');
-// const bergerX = document.querySelector('header .main_menu .material-icons');
-// const bergerMenu = document.querySelector('header .main_menu');
-
-// berger.addEventListener('click',()=>{
-//     bergerMenu.style.display = 'block';
-// })
-
-
-// bergerX.addEventListener('click',()=>{
-//     bergerMenu.style.display = 'none';
-// })
-
-
 
 
 //main 음료 시간순 나타나기
@@ -186,8 +171,33 @@ if(window.innerWidth >= 1024){
 }
 
 
+//버거메뉴 모바일 열고닫기
+const berger = document.querySelector('header .mob_menu .bergerIcon');
+const bergerX = document.querySelector('header .main_menu .menu_inner .material-icons');
+const bergerMenu = document.querySelector('header .main_menu');
+
+berger.addEventListener('click',()=>{
+    bergerMenu.style.display = 'block';
+})
+
+bergerX.addEventListener('click',()=>{
+    bergerMenu.style.display = 'none';
+})
 
 
+//버거메뉴 모바일 타이틀 열고접기
+const menuTitle = document.querySelectorAll('header .main_menu .item h4');
+
+menuTitle.forEach((title,idx)=>{
+    title.addEventListener('click',()=>{
+        let titleList = title.nextElementSibling;
+        
+        if(titleList){
+            let isOpen = titleList.style.display === 'block';
+            titleList.style.display = isOpen ?'none':'block';
+        }
+    })
+})
 
 
 
