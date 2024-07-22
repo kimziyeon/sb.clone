@@ -1224,7 +1224,7 @@ footer .corp {
         z-index: 999;
     }
 
-    header .main_menu .menu_inner .search_m input {
+    header .main_menu .menu_inner .search_m .input_m {
         width: 60%;
     }
 
