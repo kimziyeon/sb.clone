@@ -1391,6 +1391,12 @@ footer .corp {
 
 
 
+    .notice .notice-line .inner .inner__left {
+        padding-left: 20px;
+    }
+
+
+
     .rewards .inner {
         width: 100%;
         height: 100%;
@@ -1738,6 +1744,7 @@ footer .corp {
 
     .notice .notice-line .inner .inner__left {
         width: 100%;
+        padding: 0;
     }
 
     .notice .notice-line .inner .inner__rignt {
