@@ -316,8 +316,11 @@ header .badges {
 }
 
 header .badges .material-icons {
-    display: none;
+    color: #e6f2ef;
+    margin-right: 10px;
 }
+
+
 
 
 
@@ -1710,11 +1713,6 @@ footer .corp {
 @media (max-width: 640px) {
 
 
-    header .badges .material-icons {
-        display: block;
-        color: #e6f2ef;
-        margin-right: 10px;
-    }
 
 
 
