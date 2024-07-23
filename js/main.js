@@ -16,6 +16,7 @@ searchInput.addEventListener('focus', () => {
 searchInput.addEventListener('blur', () => {
     search.classList.remove('active');
     searchInput.setAttribute('placeholder', '');
+    searchInput.value = '';
 });
 
 
