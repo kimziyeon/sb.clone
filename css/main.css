@@ -1225,15 +1225,15 @@ footer .corp {
         padding: 30px 0;
         position: fixed;
         z-index: 999;
+        gap: 10px;
     }
 
-    header .main_menu .menu_inner .search_m .input_m {
-        width: 60%;
+    header .main_menu .menu_inner .search_m #input_m {
+        width: 50%;
     }
 
-    header .main_menu .menu_inner .search_m .search {
+    header .main_menu .menu_inner .search_m .searchBtn {
         color: #999;
-        margin-left: 20px;
     }
 
     header .main_menu .menu_inner>.material-icons {
