@@ -174,7 +174,7 @@ if(window.innerWidth >= 1024){
 
 //버거메뉴 모바일 열고닫기
 const berger = document.querySelector('header .mob_menu .bergerIcon');
-const bergerX = document.querySelector('header .main_menu .menu_inner .material-icons');
+const bergerX = document.querySelector('header .main_menu .close');
 const bergerMenu = document.querySelector('header .main_menu');
 
 
