@@ -1239,13 +1239,13 @@ footer .corp {
     header .main_menu .close {
         display: block;
         position: fixed;
-        top: 3%;
+        top: 4%;
+        left: 8%;
         z-index: 999;
-        left: 7%;
     }
 
     header .main_menu .close img {
-        width: 50%;
+        width: 40%;
     }
 
 
