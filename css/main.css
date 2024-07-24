@@ -233,7 +233,7 @@ header .main_menu .menu_inner {
 }
 
 header .main_menu .menu_inner .search_m,
-header .main_menu .menu_inner>.material-icons {
+header .main_menu .close {
     display: none;
 }
 
@@ -1236,14 +1236,16 @@ footer .corp {
         color: #999;
     }
 
-    header .main_menu .menu_inner>.material-icons {
+    header .main_menu .close {
         display: block;
         position: fixed;
-        top: 5%;
-        left: 10%;
-        color: #fff;
-        cursor: pointer;
+        top: 3%;
         z-index: 999;
+        left: 7%;
+    }
+
+    header .main_menu .close img {
+        width: 50%;
     }
 
 
