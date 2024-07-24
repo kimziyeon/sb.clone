@@ -1237,12 +1237,10 @@ footer .corp {
     }
 
     header .main_menu .menu_inner>.material-icons {
-        display: block;
         position: fixed;
         top: 4%;
         right: 80%;
         color: #fff;
-        font-size: 40px;
         cursor: pointer;
         z-index: 999;
     }
