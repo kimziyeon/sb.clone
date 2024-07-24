@@ -1239,8 +1239,8 @@ footer .corp {
     header .main_menu .menu_inner>.material-icons {
         display: block;
         position: fixed;
-        top: 4%;
-        right: 80%;
+        top: 5%;
+        left: 10%;
         color: #fff;
         cursor: pointer;
         z-index: 999;
