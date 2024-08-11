@@ -376,22 +376,22 @@ header .badges .material-icons {
     position: absolute;
     top: 0;
     left: 22%;
-    width: 15%;
+    width: 17%;
     z-index: 9;
 }
 
 .visual .cup02 {
     position: absolute;
     top: 0;
-    left: 34%;
-    width: 15%;
+    left: 35%;
+    width: 17%;
     z-index: 8;
 }
 
 .visual .cup03 {
     position: absolute;
     top: 0;
-    left: 45%;
+    left: 49%;
     width: 17%;
     z-index: 8;
 }
@@ -399,10 +399,9 @@ header .badges .material-icons {
 .visual .cup04 {
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 18%;
+    left: 63%;
+    width: 23%;
     z-index: 8;
-    transform: translate(50%, 45%);
 }
 
 .visual .fade-in {
@@ -805,7 +804,7 @@ header .badges .material-icons {
 
 /* favorite */
 .favorite {
-    background: url(../images/favorite_bg.jpg) no-repeat center / cover;
+    background: url(../images/favorite_bg.png) no-repeat center / cover;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
@@ -843,7 +842,7 @@ header .badges .material-icons {
     top: 50%;
     right: -15%;
     transform: translateY(-50%);
-    width: 80%;
+    width: 60%;
 }
 
 
