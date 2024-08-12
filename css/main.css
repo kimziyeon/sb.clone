@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .inner {
     width: 80%;
     margin: 0 auto;
@@ -1216,6 +1220,7 @@ footer .corp {
         z-index: 999;
         flex-direction: column;
         overflow: scroll;
+
     }
 
     header .main_menu .menu_inner .search_m {
