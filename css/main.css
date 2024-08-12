@@ -79,6 +79,9 @@ a {
     color: #fff;
 }
 
+section>h3 {
+    display: none;
+}
 
 
 /* 섹션 - show 스크롤효과 */
