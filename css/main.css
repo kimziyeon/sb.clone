@@ -72,6 +72,16 @@ li {
     color: #af794c;
 }
 
+.btn.btn--beige {
+    border: 2px solid #e8b679;
+    color: #e8b679;
+}
+
+.btn.btn--beige:hover {
+    background-color: #e8b679;
+    color: #fff;
+}
+
 .btn.btn--brown:hover {
     background-color: #af794c;
     color: #fff;
@@ -350,14 +360,19 @@ header .badges .material-icons {
 .visual .inner {
     position: absolute;
     top: 18%;
-    left: 18%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+
 }
 
 .visual .title {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    width: 16%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .visual .title .visual-title {
@@ -373,43 +388,35 @@ header .badges .material-icons {
 }
 
 .visual .title .btn {
-    position: absolute;
-    bottom: -20%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    font-size: 14px;
 }
 
-.visual .cup01 {
-    position: absolute;
-    top: 0;
-    left: 22%;
-    width: 17%;
-    z-index: 9;
+.visual .cup_group_pc {
+    width: 18%;
+    display: flex;
 }
 
-.visual .cup02 {
-    position: absolute;
-    top: 0;
-    left: 35%;
-    width: 17%;
-    z-index: 8;
+
+.visual .cup_group_pc .cup01 {
+    width: 100%;
+    object-fit: cover;
+
 }
 
-.visual .cup03 {
-    position: absolute;
-    top: 0;
-    left: 49%;
-    width: 17%;
-    z-index: 8;
+.visual .cup_group_pc .cup02 {
+    width: 100%;
+    object-fit: cover;
+    margin-left: -20px;
+
 }
 
-.visual .cup04 {
-    position: absolute;
-    top: 0;
-    left: 63%;
-    width: 23%;
-    z-index: 8;
+.visual .cup_group_pc .cup03 {
+    width: 100%;
+    object-fit: cover;
+    margin-left: -30px;
+
 }
+
 
 .visual .fade-in {
     opacity: 0;
@@ -742,7 +749,7 @@ header .badges .material-icons {
 /* main-bean */
 
 .main-bean {
-    background: url(../images/25th_summer_bean_bg.jpg) no-repeat center / cover;
+    background: url(../images/main_bean_bg.png) no-repeat center / cover;
 }
 
 .main-bean .inner {
@@ -753,6 +760,10 @@ header .badges .material-icons {
 }
 
 .main-bean .bean {}
+
+.main-bean .bean_mo {
+    display: none;
+}
 
 .main-bean .txt_group {}
 
@@ -1333,9 +1344,10 @@ footer .corp {
     }
 
     .visual .inner {
-        width: 90%;
-        top: 4%;
-        left: 5%;
+        flex-direction: column;
+        top: 8%;
+        left: 0;
+        gap: 100px;
     }
 
     .visual .title {
@@ -1349,52 +1361,44 @@ footer .corp {
 
     .visual .title .visual-title_m {
         display: block;
-        width: 35%;
-        margin-left: 10%;
+        width: 45%;
     }
 
     .visual .title .btn {
-        width: 30%;
-        padding: 5% 0;
         position: absolute;
-        top: 305vw;
-        line-height: 0;
+        top: 225vw;
+        font-size: 18px;
+        width: 35%;
+        padding: 4% 0;
     }
 
 
 
-    .visual .cup01,
-    .visual .cup02,
-    .visual .cup03,
-    .visual .cup04 {
+    .visual .cup_group_pc {
         display: none;
     }
 
-    .cup_group_m {
-        width: 85%;
+    .visual .cup_group_m {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
+        width: 70%;
+        gap: 80px;
     }
 
-    .cup_group_m .cup01_m {
+    .cup01_m,
+    .cup03_m {
         width: 100%;
-        margin-left: 15%;
+        object-fit: cover;
+
     }
 
-    .cup_group_m .cup02_m {
+    .cup02_m {
         width: 90%;
+        object-fit: cover;
     }
 
-    .cup_group_m .cup03_m {
-        width: 105%;
-        margin-left: 15%;
-    }
-
-    .cup_group_m .cup04_m {
-        width: 90%;
-    }
 
 
 
@@ -1462,18 +1466,21 @@ footer .corp {
 
     .main-bean {
         padding: 100px 0;
-        background: url(../images/25th_summer_bean_bg_m.jpg) no-repeat center / cover;
+        background: url(../images/main_bean_bg_mo.png) no-repeat center / cover;
     }
 
     .main-bean .inner {
         height: auto;
         flex-direction: column;
+        gap: 60px;
     }
 
     .main-bean .bean {
-        width: 70%;
-        margin: 0 auto;
-        padding-left: 100px;
+        display: none;
+    }
+
+    .main-bean .bean_mo {
+        display: block;
     }
 
     .main-bean .txt_group {
@@ -1542,7 +1549,7 @@ footer .corp {
     }
 
     .favorite {
-        background: url(../images/favorite_bg_m.jpg) no-repeat center / cover;
+        background: url(../images/favorite_bg_m.png) no-repeat center / cover;
 
     }
 
@@ -1726,7 +1733,19 @@ footer .corp {
 
 @media (max-width: 640px) {
 
+    .visual .inner {
+        gap: 50px;
 
+    }
+
+    .visual .title .btn {
+        font-size: 16px;
+
+    }
+
+    .visual .cup_group_m {
+        gap: 30px;
+    }
 
 
 
