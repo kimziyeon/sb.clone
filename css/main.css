@@ -353,7 +353,7 @@ header .badges .material-icons {
     width: 100%;
 }
 
-.visual .visual-bg_m {
+.visual .visual-bg_mo {
     display: none;
 }
 
@@ -363,7 +363,7 @@ header .badges .material-icons {
     left: 10%;
     display: flex;
     align-items: center;
-    gap: 8%;
+    gap: 3%;
 
 }
 
@@ -376,14 +376,14 @@ header .badges .material-icons {
 }
 
 .visual .title .visual-title {
-    width: 100%;
+    width: 70%;
 }
 
-.visual .title .visual-title_m {
+.visual .title .visual-title_mo {
     display: none;
 }
 
-.cup_group_m {
+.cup_group_mo {
     display: none;
 }
 
@@ -391,30 +391,48 @@ header .badges .material-icons {
     font-size: 14px;
 }
 
-.visual .cup_group_pc {
-    width: 18%;
+.visual .cup_group {
+    width: 100%;
     display: flex;
+    position: relative;
 }
 
 
-.visual .cup_group_pc .cup01 {
+.visual .cup_group .cup01,
+.cup02,
+.cup03,
+.cup04,
+.cup05 {
     width: 100%;
     object-fit: cover;
-
+    max-width: 180px;
+    min-width: 100px;
 }
 
-.visual .cup_group_pc .cup02 {
-    width: 100%;
-    object-fit: cover;
-    margin-left: -20px;
-
+.visual .cup_group .cup02 {
+    position: absolute;
+    top: 50px;
+    left: 130px;
 }
 
-.visual .cup_group_pc .cup03 {
-    width: 100%;
-    object-fit: cover;
-    margin-left: -30px;
+.visual .cup_group .cup03 {
+    position: absolute;
+    top: 80px;
+    left: 255px;
+    max-width: 210px;
+    min-width: 100px;
+}
 
+.visual .cup_group .cup04 {
+    position: absolute;
+    top: 50px;
+    left: 440px;
+}
+
+.visual .cup_group .cup05 {
+    position: absolute;
+    top: 20px;
+    left: 580px;
 }
 
 
@@ -757,6 +775,8 @@ header .badges .material-icons {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
 }
 
 .main-bean .bean {}
@@ -1332,15 +1352,18 @@ footer .corp {
 
     .visual {
         margin-top: 69px;
+        position: relative;
     }
 
     .visual .visual-bg {
         display: none;
     }
 
-    .visual .visual-bg_m {
+    .visual .visual-bg_mo {
         display: block;
         width: 100%;
+        height: 100%;
+
     }
 
     .visual .inner {
@@ -1352,33 +1375,32 @@ footer .corp {
 
     .visual .title {
         width: 100%;
-        position: relative;
     }
 
     .visual .title .visual-title {
         display: none;
     }
 
-    .visual .title .visual-title_m {
+    .visual .title .visual-title_mo {
         display: block;
         width: 45%;
     }
 
     .visual .title .btn {
-        position: absolute;
-        top: 225vw;
         font-size: 18px;
         width: 35%;
         padding: 4% 0;
+        position: absolute;
+        bottom: -8%;
     }
 
 
 
-    .visual .cup_group_pc {
+    .visual .cup_group {
         display: none;
     }
 
-    .visual .cup_group_m {
+    .visual .cup_group_mo {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1387,14 +1409,14 @@ footer .corp {
         gap: 80px;
     }
 
-    .cup01_m,
-    .cup03_m {
+    .cup01_mo,
+    .cup03_mo {
         width: 100%;
         object-fit: cover;
 
     }
 
-    .cup02_m {
+    .cup02_mo {
         width: 90%;
         object-fit: cover;
     }
@@ -1466,7 +1488,7 @@ footer .corp {
 
     .main-bean {
         padding: 100px 0;
-        background: url(../images/main_bean_bg_mo.png) no-repeat center / cover;
+        background: url(../images/main_bean_bg_mo.jpg) no-repeat center / cover;
     }
 
     .main-bean .inner {
@@ -1740,11 +1762,10 @@ footer .corp {
 
     .visual .title .btn {
         font-size: 16px;
-
     }
 
-    .visual .cup_group_m {
-        gap: 30px;
+    .visual .cup_group_mo {
+        gap: 80px;
     }
 
 
