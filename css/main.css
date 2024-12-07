@@ -805,7 +805,7 @@ header .badges .material-icons {
 /* reserve */
 
 .reserve {
-    background: url(../images/reserve_bg_pc.jpg) no-repeat center / cover;
+    background: url(../images/reserve_bg.png) no-repeat center / cover;
     position: relative;
     overflow: hidden;
 }
@@ -816,25 +816,26 @@ header .badges .material-icons {
 }
 
 .reserve .coffee {
-    max-width: none;
+    display: block;
     position: absolute;
     top: 0;
-    right: 50%;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .reserve .txt_group {
     position: absolute;
-    top: 20%;
-    left: 20%;
+    top: 14%;
+    left: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .reserve .txt_group .more {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 
@@ -842,7 +843,7 @@ header .badges .material-icons {
 
 /* favorite */
 .favorite {
-    background: url(../images/favorite_bg.png) no-repeat center / cover;
+    background: url(../images/favorite_bg.jpg) no-repeat center / cover;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
@@ -880,7 +881,7 @@ header .badges .material-icons {
     top: 50%;
     right: -15%;
     transform: translateY(-50%);
-    width: 60%;
+    width: 70%;
 }
 
 
@@ -1535,7 +1536,7 @@ footer .corp {
 
 
     .reserve {
-        background: url(../images/reserve_bg_m.jpg) no-repeat center / cover;
+        background: url(../images/reserve_bg_mo.jpg) no-repeat center / cover;
     }
 
     .reserve .inner {
@@ -1549,29 +1550,30 @@ footer .corp {
     }
 
     .reserve .txt_group {
-        position: static;
+        width: 100%;
+        transform: translateX(0);
+        left: 0;
+        top: 85%;
     }
 
     .reserve .txt_group .more {
         width: 100%;
-        bottom: 10%;
+        margin: 0;
+
     }
 
     .reserve .txt_group .more .btn {
         width: 30%;
         margin: 0 auto;
         padding: 3% 0;
-        color: #fff;
-        border: 2px solid #fff;
     }
 
     .reserve .txt_group .more .btn:hover {
         color: #13362d;
-        background-color: #fff;
     }
 
     .favorite {
-        background: url(../images/favorite_bg_m.png) no-repeat center / cover;
+        background: url(../images/favorite_bg_mo.jpg) no-repeat center / cover;
 
     }
 
